@@ -1,4 +1,12 @@
 use leptos::*;
+
+#[component]
+fn App(_cx: Scope) -> Element {
+    view! { _cx,
+        <p>"Hello, world!"</p>
+    }
+}
+
 fn main() {
-    mount_to_body(|_cx| view! { cx, <p>"Hello, world!"</p> })
+    mount_to_body(|cx| view! {cx, <App/>})
 }
