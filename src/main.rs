@@ -1,8 +1,8 @@
 use leptos::*;
 
 #[component]
-fn App(_cx: Scope) -> Element {
-    view! { _cx,
+fn App(cx: Scope) -> impl IntoView {
+    view! { cx,
         <p>"Hello, world!"</p>
     }
 }
