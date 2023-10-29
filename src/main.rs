@@ -1,12 +1,12 @@
 use leptos::*;
 
 #[component]
-fn App(cx: Scope) -> impl IntoView {
-    view! { cx,
+fn App() -> impl IntoView {
+    view! {
         <p>"Hello, world!"</p>
     }
 }
 
 fn main() {
-    mount_to_body(|cx| view! {cx, <App/>})
+    mount_to_body(|| view! {<App/>})
 }
